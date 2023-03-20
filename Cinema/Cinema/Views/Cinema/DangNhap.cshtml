@@ -1,0 +1,19 @@
+﻿@model Cinema.Models.Accout
+
+@{
+    ViewBag.Title = "DangNhap";
+}
+
+<h2>DangNhap</h2>
+@using (Html.BeginForm())
+{
+<p>
+    Taikhoan: @Html.TextBoxFor(x => x.TaiKhoan)
+</p>
+<p>
+    Matkhau: @Html.TextBoxFor(x => x.Matkhau)
+</p>
+    <p>
+        <input type="submit" value="Dang nhap"/>
+    </p>
+}
